@@ -16,7 +16,7 @@ export default function Home() {
   const imagesRef = useRef<HTMLDivElement>(null);
 
   useGSAP(
-    (context) => {
+    () => {
       const path = pathRef.current as SVGPathElement | null;
       const totalLength = path!.getTotalLength();
 
