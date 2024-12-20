@@ -8,11 +8,19 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        opensans: ["Open Sans", "sans-serif"],
+        orbitron: ["Orbitron"],
+        playfairDisplay: ["Playfair Display"],
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        "primary-foreground": "var(--primary-foreground)",
+        "secondary-foreground": "var(--secondary-foreground)",
+        primary: "var(--primary)",
+        secondary: "var(--secondary)",
       },
     },
   },
   plugins: [],
+  darkMode: "class",
 } satisfies Config;
