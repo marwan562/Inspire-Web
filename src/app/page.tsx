@@ -19,7 +19,6 @@ export default function Home() {
     (context) => {
       const path = pathRef.current as SVGPathElement | null;
       const totalLength = path!.getTotalLength();
-      const tlImage = gsap.timeline({ delay: 5 });
 
       gsap.from("#image", {
         opacity: 0,

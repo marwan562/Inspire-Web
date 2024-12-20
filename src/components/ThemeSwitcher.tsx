@@ -14,10 +14,7 @@ const ThemeSwitcher = () => {
   return (
     <div className="relative">
       <button>
-        <Paintbrush
-          size={25}
-          className=" text-accent"
-        />
+        <Paintbrush size={25} className=" text-accent" />
       </button>
     </div>
   );
