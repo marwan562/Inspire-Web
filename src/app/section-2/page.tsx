@@ -22,6 +22,7 @@ const Page = () => {
     () => {
       const tl = gsap.timeline({
         defaults: { duration: 3, ease: "power2.in", delay: 1 },
+        yoyo: true, 
         repeat: -1,
       });
 
@@ -37,17 +38,17 @@ const Page = () => {
       ref={container}
       className=" p-[32px]  flex-col items-center  flex lg:flex-row justify-center gap-[18px]  md:gap-[20px] lg:gap-[32px]  h-full  max-w-full    overflow-x-hidden "
     >
-      <div className="rounded-[40px]  bg-chair2 md:bg-chair relative max-w-[1090px] bg-center bg-cover bg-no-repeat h-screen w-full">
+      <div className="rounded-[40px]   bg-chair relative max-w-[1090px] bg-center bg-cover bg-no-repeat h-screen w-full">
         {" "}
         {/*logo*/}
         <div
-          className=" absolute -top-1 left-0 bg-primary  px-8 border-primary rounded-br-[25px] 
+          className=" absolute -top-1 left-0 bg-primary px-4   md:px-8 border-primary rounded-br-[25px] 
                  "
         >
           <div
             id="curve-1"
-            className="  absolute w-[57px] h-[53px] top-0 -right-[55px] 
-                   rounded-tl-full shadow-[-15px_-16px_0px_#000000] "
+            className="  absolute  w-[57px] h-[56px] top-0 -right-[55px] 
+                   rounded-tl-full shadow-[-15px_-12px_0px_#000000] "
           ></div>
 
           <div
@@ -65,11 +66,11 @@ const Page = () => {
         <div className="     absolute top-[22%] sm:top-[18%] md:top-[29%] lg:top-[33%]    w-full h-full leading-none">
           <div className="   flex space-y-2 flex-col mx-3 m-auto md:flex-row justify-around items-start  lg:items-center ">
             <div className="  max-w-[480px]  lg:max-w-[766px]    flex flex-col items-center justify-center gap-[15px]">
-              <h2 className=" font-rosca  text-wrap text-[52px] sm:text-[60px]  text-primary  md:text-inherit lg:text-[70px] xl:text-[92px] ">
+              <h2 className=" font-rosca  text-wrap text-[52px] sm:text-[60px]   lg:text-[70px] xl:text-[92px] ">
                 <span className=" text-secondary">Your Space</span> Reimagined
                 with Creativity
               </h2>
-              <p className=" font-rosca   md:text-wrap  text-primary md:text-inherit font-thin  text-[20px] md:text-[24px]">
+              <p className=" font-rosca   md:text-wrap font-thin  text-[20px] md:text-[24px]">
                 From modern minimalism to timeless elegance, I create spaces
                 that not only reflect your personality but also enhance your
                 lifestyle.
@@ -99,6 +100,7 @@ const Page = () => {
                       .map((el, i) => (
                         <Image
                           key={i}
+                            loading="lazy"
                           src={`/images-section-2/unsplash-${++i}.png`}
                           className=" object-cover max-w-[235px] rounded-[22px] mr-2  h-[134px]  bg-slate-100"
                           width={500}
@@ -140,13 +142,13 @@ const Page = () => {
         </div>
         {/*menu*/}
         <div
-          className="absolute block lg:hidden  -top-1 right-0 bg-primary py-4 px-8 border-primary rounded-bl-[25px] 
+          className="absolute block lg:hidden  -top-1 right-0 bg-primary py-4 px-4 md:px-8 border-primary rounded-bl-[25px] 
                  "
         >
           <div
             id="curve-1"
-            className="  absolute w-[57px] h-[55px] top-0 -left-[55px] 
-                   rounded-tr-full shadow-[15px_-16px_0px_#000000] "
+            className="    absolute w-[57px] h-[56px] top-0 -left-[55px] 
+                   rounded-tr-full shadow-[12px_-15px_0px_#000000] "
           ></div>
           <div
             id="curve-2"
@@ -179,25 +181,26 @@ const Page = () => {
         >
           <div
             id="curve-1"
-            className="  absolute w-[57px] h-[52px] bottom-4 -left-[50px] 
-                   rounded-br-full bg--500 shadow-[5px_20px_0px_#000000] "
+            className="   absolute w-[57px] h-[52px] bottom-4 -left-[53px] 
+                   rounded-br-full shadow-[8px_20px_0px_#000000] "
           ></div>
           <div
             id="curve-2"
             className="  absolute w-[50px] h-[56px] -top-[50px] right-0 
                    rounded-br-full shadow-[17px_8.5px_0px_#000000] "
           ></div>
-          <button className="z-30  text-[20px] bg-secondary-foreground font-rosca  hover:bg-secondary transition-all duration-300 ease-in-out  border-secondary-foreground  font-normal text-center border px-5 py-2 w-full rounded-[22px] flex flex-row justify-between items-center gap-[32px]">
+          <button className="z-20 max-w-[340px] text-[20px] bg-secondary-foreground font-rosca  hover:bg-secondary transition-all duration-300 ease-in-out  border-secondary-foreground  font-normal text-center border px-5 py-2  rounded-[22px] flex flex-row justify-between items-center gap-[32px]">
             Let’s Design Your Space
             <ChevronRight className="stroke-[1.5]   " />
           </button>{" "}
         </div>
       </div>
 
-      <div className="flex flex-col relative h-[35vh] md:h-[45vh] lg:h-screen w-full flex-wrap  lg:max-w-[260px]  gap-3">
+      <div className="flex flex-col relative h-[40vh] md:h-[45vh] lg:h-screen w-full flex-wrap  lg:max-w-[260px]  gap-3">
         <div className=" flex flex-row lg:flex-col gap-4 space-y-4">
           <div className=" space-y-3 flex flex-col max-w-[193px]  md:max-w-[260px]  rounded-[40px] w-full h-[173px] md:h-full">
             <Image
+            loading="lazy"
               src={"/images-section-2/Your image.png"}
               width={260}
               height={269}

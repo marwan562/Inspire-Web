@@ -29,7 +29,9 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <ThemeProvider>
-          <div className="  min-h-full w-full font-opensans  bg-primary text-white ">{children}</div>
+          <div className="    font-opensans  bg-primary text-white ">
+            {children}
+          </div>
         </ThemeProvider>
       </body>
     </html>
