@@ -13,7 +13,7 @@ export default {
       },
       backgroundImage: {
         chair: "url('/images-section-2/background.jpeg')",
-        chair2:"url('/images-section-2/background-mobile.jpg')"
+        chair2: "url('/images-section-2/background-mobile.jpg')",
       },
       fontFamily: {
         opensans: ["Open Sans", "sans-serif"],
@@ -22,7 +22,7 @@ export default {
         rosca: ["Rosca", "sans-serif"],
         playfairdisplaySC: ["Playfair Display SC"],
         wosker: ["Wosker", "sans-serif"],
-        glancyr:["Glancyr"]
+        glancyr: ["Glancyr"],
       },
       colors: {
         "primary-foreground": "var(--primary-foreground)",
@@ -30,6 +30,13 @@ export default {
         primary: "var(--primary)",
         secondary: "var(--secondary)",
         third: "var(--third)",
+      },
+      screens: {
+        'tablet': '640px',
+
+      'laptop': '1024px',
+
+      'desktop': '1280px',
       },
     },
   },
