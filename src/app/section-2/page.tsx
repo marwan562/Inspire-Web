@@ -14,7 +14,7 @@ import {
 import Image from "next/image";
 import { useRef } from "react";
 
-const page = () => {
+const Page = () => {
   const container = useRef(null);
   const slideImages = useRef(null);
 
@@ -246,4 +246,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
