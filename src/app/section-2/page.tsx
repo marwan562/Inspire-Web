@@ -26,7 +26,7 @@ const Page = () => {
       });
 
       tl.to(slideImages.current, { translateX: 126 })
-        .to(slideImages.current, { x: -120 }) 
+        .to(slideImages.current, { x: -120 })
         .to(slideImages.current, { x: -360 })
         .to(slideImages.current, { x: 126 });
     },
@@ -64,8 +64,8 @@ const Page = () => {
         {/*Headline*/}
         <div className="     absolute top-[22%] sm:top-[18%] md:top-[29%] lg:top-[33%]    w-full h-full leading-none">
           <div className="   flex space-y-2 flex-col mx-3 m-auto md:flex-row justify-around items-start  lg:items-center ">
-            <div className="  max-w-[480px]  lg:max-w-[766px] text-wrap   flex flex-col items-center justify-center gap-[15px]">
-              <h2 className=" font-rosca  text-wrap text-[52px] sm:text-[60px]  text-primary  md:text-inherit lg:text-[70px] xl:text-[96px] ">
+            <div className="  max-w-[480px]  lg:max-w-[766px]    flex flex-col items-center justify-center gap-[15px]">
+              <h2 className=" font-rosca  text-wrap text-[52px] sm:text-[60px]  text-primary  md:text-inherit lg:text-[70px] xl:text-[92px] ">
                 <span className=" text-secondary">Your Space</span> Reimagined
                 with Creativity
               </h2>
