@@ -22,29 +22,29 @@ export default function Home() {
 
       gsap.from("#image", {
         opacity: 0,
-        translateY: 600,
+        translateY: 400,
         duration: 3,
         stagger: 0.2,
       });
 
-      gsap.to("#image2", {
-        gridColumn: "span 2",
-        gridRow: "span 1",
-        ease: "power2.in",
-        duration: 2,
-      });
-      gsap.to("#image3", {
-        gridColumn: "span 2",
-        gridRow: "span 2",
-        ease: "power2.out",
-        duration: 2,
-      });
-      gsap.to("#image1", {
-        gridColumn: "span 1",
-        gridRow: "span 3",
-        ease: "power2.inOut",
-        duration: 2,
-      });
+      // gsap.to("#image2", {
+      //   gridColumn: "span 2",
+      //   gridRow: "span 1",
+      //   ease: "power2.in",
+      //   duration: 2,
+      // });
+      // gsap.to("#image3", {
+      //   gridColumn: "span 2",
+      //   gridRow: "span 2",
+      //   ease: "power2.out",
+      //   duration: 2,
+      // });
+      // gsap.to("#image1", {
+      //   gridColumn: "span 1",
+      //   gridRow: "span 3",
+      //   ease: "power2.inOut",
+      //   duration: 2,
+      // });
 
       gsap.fromTo(
         "#blur-l",
@@ -200,7 +200,7 @@ export default function Home() {
               <ArrowUpRight className=" text-secondary-foreground animate-pulse" />
             </div>
             <div
-              id="image1"
+              id="image"
               className="row-span-3    transition-all ease-in-out duration-200"
             >
               <Image
@@ -213,7 +213,7 @@ export default function Home() {
             </div>
             {/* row-span-1 */}
             <div
-              id="image2"
+              id="image"
               className="col-span-2 row-span-2  transition-all ease-in duration-200"
             >
               <Image
@@ -226,7 +226,7 @@ export default function Home() {
             </div>
             {/* col-span-2 row-2 */}
             <div
-              id="image3"
+              id="image"
               className="col-span-2   transition-all ease-out duration-200   "
             >
               <Image

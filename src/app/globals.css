@@ -1,6 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@font-face {
+  font-family: 'Rosca';
+  src: url('/fonts/Rosca Slant.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face  {
+  font-family: "Wosker";
+  src: url("/fonts/Wosker.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face  {
+  font-family: "Glancyr";
+  src: url("/fonts/Glancyr Variable-VF.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -48,7 +69,6 @@ body,
   --secondary-foreground: #f1f1f1;
 }
 
-
 /*  DARK THEMES */
 [data-theme="dark-zinc"] {
   --primary: #ffffff;
@@ -82,6 +102,15 @@ body,
   --secondary-foreground: #222222;
 }
 
+[data-theme-section2="dark-brown"] {
+  --primary: #000000;
+
+  --secondary: #4f3723;
+  --secondary-foreground: #89674a;
+
+  --third: #e0dede;
+  --third-foreground: #ffffff;
+}
 
 #image2 {
   transition: all 2s ease-in;
