@@ -38,26 +38,26 @@ const Page = () => {
       ref={container}
       className=" p-[10px] md:p-[32px]  flex-col items-center  flex lg:flex-row justify-center gap-[18px]  md:gap-[20px] lg:gap-[32px]  h-full  max-w-full  "
     >
-      <div className="rounded-[40px]   bg-chair relative bg-center bg-cover bg-no-repeat h-screen w-full">
+      <div className="rounded-[36px]   bg-chair relative bg-center bg-cover bg-no-repeat h-screen w-full">
         {" "}
         {/*logo*/}
         <div
-          className=" absolute -top-1 -left-1 bg-primary px-4   md:px-8 border-primary rounded-br-[25px] 
+          className=" absolute -top-1 -left-1 bg-primary px-3   md:px-8 border-primary rounded-br-[25px] 
                  "
         >
           <div
             id="curve-1"
-            className="  absolute  w-[57px] h-[56px] top-0 -right-[55px] 
-                   rounded-tl-full shadow-[-15px_-12px_0px_#000000] "
+            className="  absolute  w-[57px] h-[57px] top-1 -right-[57px] 
+                   rounded-tl-[36px]  shadow-[-10px_-12px_0px_#000000] "
           ></div>
 
           <div
             id="curve-2"
-            className="   absolute w-[50px] h-[56px] -bottom-[52px] left-0 
-                   rounded-tl-full shadow-[-17px_-12.5px_0px_#000000] "
+            className="   absolute w-[56px] h-[56px] -bottom-[55px] left-1 
+                   rounded-tl-[36px] shadow-[-17px_-12.5px_0px_#000000] "
           ></div>
 
-          <div className=" font-normal  font-wosker text-[50px]  flex items-center justify-center">
+          <div className=" font-normal  font-wosker text-[47px] md:text-[50px]  flex items-center justify-center">
             <span className=" text-secondary-foreground ">I</span>W
             <span className=" hidden lg:block">EB</span>
           </div>
@@ -151,13 +151,13 @@ const Page = () => {
         >
           <div
             id="curve-1"
-            className="    absolute w-[57px] h-[56px] top-0 -left-[55px] 
-                   rounded-tr-full shadow-[12px_-15px_0px_#000000] "
+            className="    absolute  w-[57px] h-[57px] top-1 -left-[57px] 
+                   rounded-tr-[36px] shadow-[15px_-15px_0px_#000000] "
           ></div>
           <div
             id="curve-2"
-            className="   absolute w-[50px] h-[56px] -bottom-[52px] right-0 
-                   rounded-tr-full shadow-[17px_-12.5px_0px_#000000] "
+            className="   absolute w-[56px] h-[56px] -bottom-[56px] right-1
+                   rounded-tr-[36px] shadow-[17px_-12.5px_0px_#000000] "
           ></div>
           <Menu size={40} />
         </div>
@@ -183,15 +183,20 @@ const Page = () => {
           className="absolute   -bottom-4 right-0 bg-primary pl-3  py-4 border-primary  rounded-tl-[25px] 
                  "
         >
+          {/* <div
+            id="curve-1"
+            className="  absolute  w-[57px] h-[57px] top-1 -right-[57px] 
+                   rounded-tl-[36px]  shadow-[-10px_-12px_0px_#000000] "
+          ></div> */}
           <div
             id="curve-1"
-            className="   absolute w-[57px] h-[52px] bottom-4 -left-[53px] 
-                   rounded-br-full shadow-[8px_20px_0px_#000000] "
+            className="   absolute  w-[57px] h-[57px] bottom-4 -left-[57px] 
+                   rounded-br-[36px] shadow-[8px_20px_0px_#000000] "
           ></div>
           <div
             id="curve-2"
-            className="  absolute w-[50px] h-[56px] -top-[50px] right-0 
-                   rounded-br-full shadow-[17px_8.5px_0px_#000000] "
+            className="  absolute w-[56px] h-[56px] -top-[56px] right-0 
+                   rounded-br-[36px] shadow-[17px_8.5px_0px_#000000] "
           ></div>
           <button className="z-20 max-w-[230px]  md:max-w-[340px] text-[16px] md:text-[20px] bg-secondary-foreground font-rosca  hover:bg-secondary transition-all duration-300 ease-in-out  border-secondary-foreground  font-normal text-center border px-5 py-2  rounded-[22px] flex flex-row justify-between items-center gap-[32px]">
             Let’s Design Your Space
