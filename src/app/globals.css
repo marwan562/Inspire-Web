@@ -1,23 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
 @font-face {
-  font-family: 'Rosca';
-  src: url('/fonts/Rosca Slant.woff') format('woff');
+  font-family: "Rosca";
+  src: url("/fonts/Rosca Slant.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
-@font-face  {
+@font-face {
   font-family: "Wosker";
   src: url("/fonts/Wosker.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
-@font-face  {
+@font-face {
   font-family: "Glancyr";
   src: url("/fonts/Glancyr Variable-VF.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bold Wish";
+  src: url("/fonts/BoldWishRough-Regular.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bionix";
+  src: url("/fonts/Bionix-Fat.woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -27,12 +40,12 @@
 @tailwind utilities;
 
 html,
-body
- {
+body {
   height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
+   box-sizing: border-box;
 }
 
 /* Light Themes */
@@ -111,3 +124,15 @@ body
   --third-foreground: #ffffff;
 }
 
+[data-theme-section2="dark-pink"] {
+  --primary: #151412;
+
+  --secondary: #fcf3e2;
+  --secondary-foreground: #f5b1ae;
+
+  --third: #f85b4c;
+
+  --quadrant: #a2ae6a;
+
+  --five: #fadb6e;
+}

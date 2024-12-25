@@ -24,14 +24,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-theme-section2="dark-brown">
+    <html lang="en" data-theme-section2="dark-pink">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <ThemeProvider>
-          <div className="  min-h-0   font-opensans  bg-primary text-white ">
-            {children}
-          </div>
+          <div className="   ">{children}</div>
         </ThemeProvider>
       </body>
     </html>

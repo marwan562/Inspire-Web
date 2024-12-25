@@ -36,7 +36,7 @@ const Page = () => {
   return (
     <div
       ref={container}
-      className=" p-[10px] md:p-[32px]  flex-col items-center  flex lg:flex-row justify-center gap-[18px]  md:gap-[20px] lg:gap-[32px]  h-full  max-w-full  "
+      className=" p-[10px] md:p-[32px] bg-primary  min-h-0 w-full  text-white flex-col items-center  flex lg:flex-row justify-center gap-[18px]  md:gap-[20px] lg:gap-[32px] font-opensans  h-full  max-w-full  "
     >
       <div className="rounded-[36px]   bg-chair relative bg-center bg-cover bg-no-repeat h-screen w-full">
         {" "}

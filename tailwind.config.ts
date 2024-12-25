@@ -23,6 +23,8 @@ export default {
         playfairdisplaySC: ["Playfair Display SC"],
         wosker: ["Wosker", "sans-serif"],
         glancyr: ["Glancyr"],
+        boldWish: ["Bold Wish", "Wosker"],
+        bionix:["Bionix"]
       },
       colors: {
         "primary-foreground": "var(--primary-foreground)",
@@ -30,13 +32,15 @@ export default {
         primary: "var(--primary)",
         secondary: "var(--secondary)",
         third: "var(--third)",
+        quadrant:"var(--quadrant)",
+        five:"var(--five)"
       },
       screens: {
-        'tablet': '640px',
+        tablet: "640px",
 
-      'laptop': '1024px',
+        laptop: "1024px",
 
-      'desktop': '1280px',
+        desktop: "1280px",
       },
     },
   },
