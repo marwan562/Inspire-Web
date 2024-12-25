@@ -20,7 +20,7 @@ const SemicircleCard = () => {
         isDesktop: "(min-width: 500px)",
       },
       (context) => {
-        let { isDesktop, isMobile } = context.conditions;
+        const { isMobile } = context.conditions;
 
         const tl = gsap.timeline({
           defaults: { duration: 1 },

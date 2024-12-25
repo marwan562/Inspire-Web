@@ -20,10 +20,12 @@ const Page = () => {
   const card1Content = useRef<HTMLDivElement | null>(null);
   const card2Content = useRef<HTMLDivElement | null>(null);
 
+  useCardAnimations(card1Content, card2Content);
+
   useGSAP(
     () => {
       // /* First card animation */
-      useCardAnimations(card1Content, card2Content);
+     
 
       // const animate = () => {
       //   const tl = gsap.timeline({ repeat: -1, delay: 2, repeatDelay: 2 });

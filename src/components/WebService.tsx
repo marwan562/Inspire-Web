@@ -21,7 +21,7 @@ const WebService = () => {
           isDesktop: "(min-width: 500px)",
         },
         (context) => {
-          let { isMobile } = context.conditions;
+          const { isMobile } = context.conditions;
 
           const tl = gsap.timeline({
             yoyo: true,
