@@ -20,7 +20,7 @@ const AboutMeCard = () => {
           isDesktop: "(min-width: 500px)",
         },
         (context) => {
-          const { isMobile } = context.conditions;
+          const { isMobile } = context.conditions!
 
           const tl = gsap.timeline({
             repeat: -1,
