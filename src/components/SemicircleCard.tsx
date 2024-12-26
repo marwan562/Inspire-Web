@@ -43,7 +43,7 @@ const SemicircleCard = () => {
             staticContent.current,
             {
               x: isMobile ? 65 : 76,
-              ease: "power3.in",
+              ease: "bounce.out",
             },
             "<1"
           )
@@ -54,20 +54,28 @@ const SemicircleCard = () => {
           .to(
             staticContent.current,
             {
-              x: isMobile ? 75 : 95,
+              x: isMobile ? 75 : 160,
             },
             "-=1"
           )
           .to(hideDivOutCircle.current, {
             text: "Story",
             duration: 0.2,
+            ease:"bounce.out",
             x: isMobile ? 5 : 10,
           })
           .to(hideDivOutCircle.current, {
             opacity: 0,
             x: isMobile ? 50 : 110,
             delay: 1,
-          })
+          }) .to(
+            staticContent.current,
+            {
+              x: isMobile ? 75 : 94,
+              ease:"bounce.out"
+            },
+            "-=2.48"
+          )
           .to(
             textJourney.current,
             {

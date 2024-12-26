@@ -59,7 +59,7 @@ const WebService = () => {
               {
                 opacity: 1,
                 rotate: 90,
-                ease:"power3.in",
+                ease: "power3.in",
                 x: isMobile ? -120 : -200,
                 y: isMobile ? 120 : 200,
               },
