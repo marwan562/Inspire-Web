@@ -20,7 +20,7 @@ const AboutMeCard = () => {
           isDesktop: "(min-width: 500px)",
         },
         (context) => {
-          const { isMobile } = context.conditions!
+          const { isMobile } = context.conditions!;
 
           const tl = gsap.timeline({
             repeat: -1,
@@ -64,11 +64,11 @@ const AboutMeCard = () => {
               "-=1"
             )
             .to(card2_star.current, {
-              x: 70,
-              y: -70,
+              x: 100,
+              y: -100,
               opacity: 0,
-              scale: 0,
-              delay: 1,
+              delay: 1.5,
+              ease: "power1.out",
               duration: 2,
             })
             .to(
@@ -79,7 +79,7 @@ const AboutMeCard = () => {
                 duration: 2,
                 opacity: 0,
               },
-              "-=2.4"
+              "-=2.5"
             )
             .fromTo(
               card3_content.current,
@@ -87,7 +87,7 @@ const AboutMeCard = () => {
                 y: -70,
               },
               { opacity: 1, scale: 1, x: 0, y: 0 },
-              "-=1.4"
+              "-=1.5"
             )
             .fromTo(
               card3_greenherb.current,
@@ -96,7 +96,7 @@ const AboutMeCard = () => {
                 y: 90,
               },
               { opacity: 1, x: 0, y: 0 },
-              "-=1.4"
+              "-=1.5"
             )
             .to(card3_content.current, {
               ease: "expo.inOut",
@@ -214,7 +214,7 @@ const AboutMeCard = () => {
         </div>
         <div
           ref={card2_star}
-          className="relative opacity-0  scale-0  w-[30px] h-[30px] md:w-[50px] md:h-[50px]"
+          className="relative opacity-0   w-[30px] h-[30px] md:w-[50px] md:h-[50px]"
         >
           <Image
             src={"/section-3/iamges/Union.png"}

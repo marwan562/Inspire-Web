@@ -21,7 +21,7 @@ const WebService = () => {
           isDesktop: "(min-width: 500px)",
         },
         (context) => {
-          const { isMobile } = context.conditions!
+          const { isMobile } = context.conditions!;
 
           const tl = gsap.timeline({
             yoyo: true,
@@ -33,13 +33,10 @@ const WebService = () => {
           tl.to(service_text.current, {
             opacity: 0,
           })
-            .to(
-              service_text.current,
-              {
-                opacity: 1,
-                text: "#App Design",
-              },
-            )
+            .to(service_text.current, {
+              opacity: 1,
+              text: "#App Design",
+            })
             .to(
               service_1_image.current,
               {
@@ -50,16 +47,21 @@ const WebService = () => {
               },
               "-=7"
             )
-            .to(service_1_image.current, {
-              className: "hidden",
-            },"-=3.5")
+            .to(
+              service_1_image.current,
+              {
+                className: "hidden",
+              },
+              "-=3.5"
+            )
             .from(
               service_2_image.current,
               {
                 opacity: 1,
                 rotate: 90,
-                x:isMobile?-120:-200,
-                y: isMobile ? 120 : 200,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+                ease:"power3.in",
+                x: isMobile ? -120 : -200,
+                y: isMobile ? 120 : 200,
               },
               "-=5"
             );
@@ -83,13 +85,16 @@ const WebService = () => {
           className=" object-cover "
         />
       </div>{" "}
-      <div ref={service_2_image} className=" relative opacity-1 h-[88%] w-full">
+      <div
+        ref={service_2_image}
+        className=" relative opacity-1 h-[100%] w-full"
+      >
         <Image
           src={"/section-3/iamges/phone.png"}
           alt="mackbook"
           layout="fill"
           objectFit="cover"
-          className=" object-cover "
+          className=" object-cover  "
         />
       </div>
     </div>

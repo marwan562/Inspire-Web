@@ -20,7 +20,7 @@ const SemicircleCard = () => {
         isDesktop: "(min-width: 500px)",
       },
       (context) => {
-        const { isMobile } = context.conditions!
+        const { isMobile } = context.conditions!;
 
         const tl = gsap.timeline({
           defaults: { duration: 1 },
@@ -43,8 +43,7 @@ const SemicircleCard = () => {
             staticContent.current,
             {
               x: isMobile ? 65 : 76,
-              delay: 1,
-              ease: "back.out",
+              ease: "power3.in",
             },
             "<1"
           )
@@ -55,7 +54,7 @@ const SemicircleCard = () => {
           .to(
             staticContent.current,
             {
-              x: isMobile ? 75 : 86,
+              x: isMobile ? 75 : 95,
             },
             "-=1"
           )
