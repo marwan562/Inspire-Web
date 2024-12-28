@@ -108,8 +108,8 @@ const AnimSec4 = () => {
           [vibe2.current, vibe3.current],
           {
             ease: "bounce.inOut",
-            duration:1.5,
-            delay:.2,
+            duration: 1.5,
+            delay: 0.2,
             x: 6,
           },
           "<"
@@ -182,7 +182,7 @@ const AnimSec4 = () => {
           </span>
         </div>
         <span ref={brandsVibe} className="ml-2">
-          BRAND'S
+          BRAND{"'"}S
         </span>
       </div>
 
