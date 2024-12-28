@@ -39,13 +39,23 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@layer base {
+  .font-outline-2 {
+    -webkit-text-stroke: 2px black;
+  }
+  .font-outline-4 {
+    -webkit-text-stroke: 4px black;
+  }
+}
+
 html,
 body {
   height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
-   box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Light Themes */
@@ -124,7 +134,7 @@ body {
   --third-foreground: #ffffff;
 }
 
-[data-theme-section2="dark-pink"] {
+[data-theme-section3="dark-pink"] {
   --primary: #151412;
 
   --secondary: #fcf3e2;
@@ -135,4 +145,12 @@ body {
   --quadrant: #a2ae6a;
 
   --five: #fadb6e;
+}
+
+[data-theme-section3="light"] {
+  --primary: #000000;
+  --primary-foreground: #ffffff;
+
+  --secondary: #595959;
+  --secondary-foreground: #e9e9e9;
 }
